@@ -1,0 +1,241 @@
+/*
+ * estilos.css
+ * --------------------------------------------------
+ * Estilos personalizados del Tablero Personal.
+ *
+ * El proyecto solicita utilizar variables :root.
+ * --------------------------------------------------
+ */
+
+
+/*
+ * VARIABLES GLOBALES
+ */
+
+:root {
+
+    --color-principal: #0d6efd;
+
+    --color-secundario: #6c757d;
+
+    --color-fondo: #f5f7fb;
+
+    --color-texto: #212529;
+
+    --color-tarjeta: #ffffff;
+
+    --color-borde: #dee2e6;
+
+}
+
+
+/*
+ * ESTILO GENERAL DE LA PÁGINA
+ */
+
+body {
+
+    background-color:
+        var(--color-fondo);
+
+    color:
+        var(--color-texto);
+
+    min-height:
+        100vh;
+
+}
+
+
+/*
+ * NAVBAR
+ */
+
+.navbar {
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.10);
+
+}
+
+
+.navbar-brand {
+
+    letter-spacing:
+        0.3px;
+
+}
+
+
+/*
+ * TARJETAS
+ */
+
+.card {
+
+    background-color:
+        var(--color-tarjeta);
+
+    border:
+        none;
+
+    border-radius:
+        14px;
+
+}
+
+
+/*
+ * TARJETAS DE LAS NOTAS
+ */
+
+.nota-card {
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.nota-card:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/*
+ * CONTENIDO DE LAS NOTAS
+ */
+
+.nota-contenido {
+
+    white-space:
+        normal;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+
+/*
+ * BOTONES
+ */
+
+.btn {
+
+    border-radius:
+        8px;
+
+}
+
+
+/*
+ * CAMPOS DE FORMULARIO
+ */
+
+.form-control {
+
+    border-radius:
+        8px;
+
+}
+
+
+/*
+ * WIDGET DEL TIPO DE CAMBIO
+ */
+
+.exchange-box {
+
+    background-color:
+        var(--color-tarjeta);
+
+    border:
+        1px solid
+        var(--color-borde);
+
+    border-radius:
+        12px;
+
+    padding:
+        18px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+}
+
+
+.exchange-box strong {
+
+    color:
+        var(--color-principal);
+
+    font-size:
+        1.6rem;
+
+}
+
+
+.exchange-title {
+
+    font-weight:
+        600;
+
+}
+
+
+.exchange-box small {
+
+    color:
+        var(--color-secundario);
+
+}
+
+
+/*
+ * MENSAJES
+ */
+
+.alert {
+
+    border-radius:
+        10px;
+
+}
+
+
+/*
+ * FORMULARIO DE LOGIN
+ */
+
+.card.shadow-lg {
+
+    margin-top:
+        40px;
+
+}
+
+
+/*
+ * TEXTO PEQUEÑO
+ */
+
+.text-muted {
+
+    color:
+        var(--color-secundario)
+        !important;
+
+}

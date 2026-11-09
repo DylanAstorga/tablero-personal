@@ -1,0 +1,9 @@
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration and logs
+*.log
+.env
